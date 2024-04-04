@@ -25,7 +25,7 @@ class FasTrainer():
     # init image dataset format
     def load_train_image_dataset(self):
         training_dataset =  ImageDataset(       TRAIN_DATASET,
-                                                PATH_TO_PRINTING_DATASET,
+                                                PATH_TO_TRAIN_DATASET,
                                                 MODEL_BACKBONE,
                                                 augment = 'train',
                                                 split= 'train'
@@ -33,7 +33,7 @@ class FasTrainer():
         return training_dataset
     def load_val_image_dataset(self):
         dataset = ImageDataset(     VAL_DATASET,
-                                    PATH_TO_PRINTING_DATASET,
+                                    PATH_TO_TRAIN_DATASET,
                                     MODEL_BACKBONE,
                                     augment = 'val',
                                     split= 'val'
