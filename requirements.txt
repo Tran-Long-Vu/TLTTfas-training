@@ -1,7 +1,7 @@
-numpy 
 torchvision
-opencv-python
 torch
+numpy 
+opencv-python
 albumentations
 tqdm
 scikit-learn
@@ -11,3 +11,5 @@ matplotlib
 mlflow
 onnxruntime
 onnx
+
+--index-url https://download.pytorch.org/whl/cu118
